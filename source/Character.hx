@@ -135,7 +135,7 @@ class Character extends FlxSprite {
 
 				loadOffsetFile(curCharacter);
 
-				globalOffset = [-60, 350];
+				globalOffset = [-300, -290];
 				barColor = FlxColor.fromRGB(255, 51, 125);
 
 				playAnim('idle');
