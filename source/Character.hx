@@ -125,12 +125,12 @@ class Character extends FlxSprite {
 
 				flipX = true;
 			case 'glitch':
-                                frames = AtlasFrameMaker.construct('assets/shared/images/characters/Glitch');
-				animation.addByPrefix('idle', 'Anims/Idle-Forward', 24, false);
-				animation.addByPrefix('singUP', 'Anims/Up-Sing', 24, false);
-				animation.addByPrefix('singDOWN', 'Anims/Down-Sing', 24, false);
-				animation.addByPrefix('singLEFT', 'Anims/Left-Sing', 24, false);
-				animation.addByPrefix('singRIGHT', 'Anims/Right-Sing', 24, false);
+                                frames = Paths.getSparrowAtlas('characters/Glitch', 'shared');
+				animation.addByPrefix('idle', 'Idle', 24, false);
+				animation.addByIndices('singUP', 'Up', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], "", 24, false);
+				animation.addByIndices('singDOWN', 'Down', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], "", 24, false);
+				animation.addByIndices('singLEFT', 'Left', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], "", 24, false);
+				animation.addByIndices('singRIGHT', 'Right', [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], "", 24, false);
 
 
 				loadOffsetFile(curCharacter);
