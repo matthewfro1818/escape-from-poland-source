@@ -1,6 +1,5 @@
 package;
 
-import util.AnimateAtlas;
 import sys.FileSystem;
 import flixel.math.FlxPoint;
 import flixel.util.FlxColor;
@@ -10,7 +9,6 @@ import flixel.FlxSprite;
 import flixel.animation.FlxBaseAnimation;
 import flixel.graphics.frames.FlxAtlasFrames;
 import flixel.tweens.FlxEase;
-import animateatlas.AtlasFrameMaker;
 import openfl.utils.Assets;
 
 using StringTools;
